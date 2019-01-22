@@ -15,6 +15,7 @@ class Home extends React.PureComponent {
 
                         <HomeSlider/>
                         <h1>ciao</h1>
+                        <h2>ciao</h2>
                     </div>
 
                 </div>
