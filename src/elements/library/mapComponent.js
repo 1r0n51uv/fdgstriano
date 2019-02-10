@@ -1,5 +1,4 @@
 import React from 'reactn';
-import image from './../../map.png'
 
 class MapComponent extends React.PureComponent {
 
