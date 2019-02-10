@@ -20,8 +20,11 @@ class ContactsLibrary extends Component {
                                             per una durata massima di 3 mesi
                                         </h1>
                                         <div className="text-center">
-                                            <button className="btn btn-warning">
-                                                <i className="fas fa-map-signs" style={{fontSize: '120%'}}/> Raggiungici</button>
+                                            <a href="https://www.google.com/maps/place/Via+Beniamino+Marciano,+42,+80040+Striano+NA/@40.8130618,14.5788172,18z/data=!4m8!1m2!2m1!1sVia+Beniamino+Marciano,+42+c%2Fo+Biblioteca+Comunale+Striano,+80040+Striano!3m4!1s0x146911ac767f2281:0x27c8a1b14977c5bd!8m2!3d40.814521!4d14.578376">
+                                                <button className="btn btn-warning">
+                                                    <i className="fas fa-map-signs" style={{fontSize: '120%'}}/> Raggiungici</button>
+                                            </a>
+
                                             <p>oppure contattaci</p>
                                             <button className="btn btn-facebook"><i className="fab fa-facebook-square" style={{fontSize: '120%'}}/> Facebook</button>
                                             <button className="btn btn-danger" style={{marginLeft: '2%', marginRight: '2%'}}><i className="fab fab fa-instagram" style={{fontSize: '120%'}}/> Instagram</button>

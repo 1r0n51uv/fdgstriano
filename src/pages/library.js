@@ -6,6 +6,7 @@ import 'react-alice-carousel/lib/alice-carousel.css'
 import ContactsLibrary from "../elements/library/contactsLibrary";
 import PhrasesCarousel from "../elements/library/phrasesCarousel";
 import Navbar from "../ui/navbar";
+import ChoosedBook from "../elements/library/choosedBook";
 
 const getSuggestions = value => {
     const inputValue = value.trim().toLowerCase();
@@ -167,7 +168,6 @@ class Library extends React.PureComponent{
                                         />
 
 
-
                                     </div>
                                 </div>
 
@@ -182,7 +182,7 @@ class Library extends React.PureComponent{
                                                 <Scrollbars style={{height: this.state.height}}>
                                                     {this.state.suggestions.slice(0,5).map((value1, i) => (
                                                         <div key={i} className="blockquote blockquote-info">
-                                                            <a href="#/" onClick={() => (
+                                                            <a href="#" onClick={() => (
                                                                 this.selectedTrue(value1)
                                                             )} >
                                                                 <blockquote>
@@ -207,58 +207,16 @@ class Library extends React.PureComponent{
 
                                 {this.state.selected && <div className="col-md-4" id="sushi">
 
-                                    <div className="card">
-                                        <div className="card-header">
+                                    <ChoosedBook
+                                        title={this.state.bookChoosed.title}
+                                        author={this.state.bookChoosed.author}
+                                        editor={this.state.bookChoosed.editor}
+                                        genre={this.state.bookChoosed.genre}
+                                        date={this.state.bookChoosed.date}
+                                        position={this.state.bookChoosed.position}
+                                        aviable={this.state.bookChoosed.aviable}
 
-                                        </div>
-                                        <div className="card-body">
-
-
-                                            <div className="container">
-                                                <div className="row justify-content-center">
-
-                                                    <div className="col-md-6">
-
-                                                        <h3 style={{color: '#FE881C'}}>Titolo:</h3>
-                                                        <h4>{this.state.bookChoosed.title}</h4>
-
-                                                        <h3 style={{color: '#FE881C'}}>Autore:</h3>
-                                                        <h4>{this.state.bookChoosed.author}</h4>
-
-                                                        <h3 style={{color: '#FE881C'}}>Editore:</h3>
-                                                        <h4>{this.state.bookChoosed.editor}</h4>
-
-                                                        <h3 style={{color: '#FE881C'}}>Genere:</h3>
-                                                        <h4>{this.state.bookChoosed.genre}</h4>
-
-                                                    </div>
-
-                                                    <div className="col-md-6">
-
-                                                        <h3 style={{color: '#FE881C'}}>Data:</h3>
-                                                        <h4>{this.state.bookChoosed.date}</h4>
-
-                                                        <h3 style={{color: '#FE881C'}}>Posizione:</h3>
-                                                        <h4>{this.state.bookChoosed.position}</h4>
-
-                                                        <h3 style={{color: '#FE881C'}}>Disponibilità:</h3>
-                                                        <h4>
-                                                            {this.state.bookChoosed.aviable === '1' &&
-                                                            <i className="fas fa-times" style={{color: 'red'}}/>}
-                                                            {this.state.bookChoosed.aviable === '0' &&
-                                                            <i className="fas fa-check" style={{color: 'green'}}/>}
-                                                        </h4>
-
-                                                    </div>
-
-
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-
-                                    </div>
+                                    />
 
 
                                 </div>}
