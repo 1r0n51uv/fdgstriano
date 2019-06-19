@@ -7,7 +7,6 @@ import 'firebase/firestore';
 import registerServiceWorker from './registerServiceWorker';
 import { FirestoreProvider } from 'react-firestore';
 
-
 const root = document.getElementById('root');
 
 setGlobal({
@@ -23,12 +22,12 @@ setGlobal({
 });
 
 const config = {
-    apiKey: "AIzaSyAJgLg_WwqAsTrvCMCqq1ibBop_TnKeYZ0",
-    authDomain: "fdgstriano-184221.firebaseapp.com",
-    databaseURL: "https://fdgstriano-184221.firebaseio.com",
-    projectId: "fdgstriano-184221",
-    storageBucket: "fdgstriano-184221.appspot.com",
-    messagingSenderId: "88843043712"
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    databaseURL: process.env.REACT_APP_FIREBASE_DB_URL,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MSG_SND_ID
 };
 
 

@@ -9,8 +9,19 @@ class Blog extends Component {
         return (
 
             <div>
+
                 <Navbar/>
                 <div className="section section-signup">
+                    <div className="squares square-1"/>
+                    <div className="squares square-2"/>
+                    <div className="squares square-4"/>
+                    <div>
+                        <h1 className="text-on-back text-center" style={{fontSize: '800%', paddingBottom: '2%'}}
+                        ><u>Blog</u></h1>
+                        <hr/>
+                    </div>
+
+
 
                     <div>
 
@@ -21,8 +32,8 @@ class Blog extends Component {
                                 return isLoading ? (
                                     <div className="col-md-12 text-center">
                                         <Loader
-                                            type="Puff"
-                                            color="black"
+                                            type="Watch"
+                                            color="white"
                                             height="100"
                                             width="100"
                                         />
@@ -32,13 +43,11 @@ class Blog extends Component {
                                     <div className="container">
 
                                         <div className="row justify-content-left">
-                                            <div className="squares square-1"></div>
-                                            <div className="squares square-2"></div>
-                                            <div className="squares square-3"></div>
-                                            <div className="squares square-4"></div>
+
+
                                             {
                                                 data.map(post => (
-                                                        <div className="col-sm-12 col-md-8 text-center" key={post.id}>
+                                                        <div className="col-sm-12 col-md-6 text-center" key={post.id}>
 
                                                             <AnotherSingle
                                                                 title={post.title}
