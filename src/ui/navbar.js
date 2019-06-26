@@ -1,5 +1,4 @@
 import React from 'reactn';
-import Loginmodal from "./loginmodal";
 import {Link} from "react-router-dom";
 
 class Navbar extends React.PureComponent {
@@ -71,16 +70,12 @@ class Navbar extends React.PureComponent {
                                 </Link>
                             </li>
 
-                            <li className="nav-item p-0">
-                                <a href="#/" data-toggle="modal" data-target="#myModal1" className="nav-link"><i className="fas fa-sign-in-alt"/>Login</a>
-                            </li>
 
 
                         </ul>
                     </div>
                 </div>
 
-                <Loginmodal/>
 
             </nav>
         );
