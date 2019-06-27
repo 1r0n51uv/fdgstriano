@@ -1,7 +1,7 @@
-import React from 'reactn';
+import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 
-class Navbar extends React.PureComponent {
+class Navbar extends Component {
     render() {
         return (
             <nav className="navbar navbar-expand-lg fixed-top bg-info">

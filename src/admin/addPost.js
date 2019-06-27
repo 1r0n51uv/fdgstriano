@@ -133,7 +133,7 @@ class AddPost extends Component {
                                                 </div>
 
                                                 <div className="input-group">
-                                                    <input type="text"
+                                                    <input type="date"
                                                            name="date"
                                                            className="form-control"
                                                            placeholder="Quando? (27 Dicembre 2018)"
