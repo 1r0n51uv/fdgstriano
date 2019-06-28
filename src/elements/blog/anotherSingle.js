@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
+import Moment from 'react-moment';
 
 class AnotherSingle extends Component {
     render() {
+
         return (
             <div className="card">
 
@@ -28,7 +30,9 @@ class AnotherSingle extends Component {
 
                                 <span style={{marginLeft: '2%', fontSize: '75%'}} className="badge badge-neutral">
                                 <i style={{fontSize: '120%'}} className="fas fa-calendar-day"/>
-                                    {' ' + this.props.date}
+                                    <Moment format="DD-MM-YYYY">
+                                        {this.props.date}
+                                    </Moment>
                                 </span>
                             </div>
                         </div>

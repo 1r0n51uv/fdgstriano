@@ -7,7 +7,7 @@ import Myrouter from "./logic/myrouter";
 class App extends Component {
     render() {
         return (
-            <div>
+            <div className="index-page">
                 <Myrouter/>
             </div>
 
