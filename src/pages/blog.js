@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import { FirestoreCollection } from 'react-firestore'
 import Loader from "react-loader-spinner";
-import AnotherSingle from "../elements/blog/anotherSingle";
+import BlogSingle from "../elements/blog/blogSingle";
 import Navbar from "../ui/navbar";
 
 class Blog extends Component {
+
+
     render() {
         return (
 
@@ -24,7 +26,6 @@ class Blog extends Component {
 
 
                     <div>
-
                         <FirestoreCollection
                             path="blog"
                             sort="date:desc"
@@ -49,7 +50,7 @@ class Blog extends Component {
                                                 data.map(post => (
                                                         <div className="col-sm-12 col-md-6 text-center" key={post.id}>
 
-                                                            <AnotherSingle
+                                                            <BlogSingle
                                                                 title={post.title}
                                                                 cover={post.cover}
                                                                 body={post.body.substring(0, 200) + '...'}

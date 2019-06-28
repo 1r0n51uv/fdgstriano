@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 class Navbar extends Component {
     render() {
         return (
-            <nav className="navbar navbar-expand-lg fixed-top bg-info">
+            <nav className="navbar navbar-expand-lg fixed-top navbar-transparent " colorOnScroll="100">
                 <div className="container">
                     <div className="navbar-translate">
                         <a className="navbar-brand" href="/home">
@@ -13,9 +13,9 @@ class Navbar extends Component {
                         <button className="navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navigation" aria-controls="navigation-index" aria-expanded="false"
                                 aria-label="Toggle navigation">
-                            <span className="navbar-toggler-bar bar1"></span>
-                            <span className="navbar-toggler-bar bar2"></span>
-                            <span className="navbar-toggler-bar bar3"></span>
+                            <span className="navbar-toggler-bar bar1"/>
+                            <span className="navbar-toggler-bar bar2"/>
+                            <span className="navbar-toggler-bar bar3"/>
                         </button>
                     </div>
 
