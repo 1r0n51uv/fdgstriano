@@ -1,9 +1,6 @@
 import React from 'reactn';
 import Navbar from "../ui/navbar";
 import path1 from "./../resources/path1.png";
-import Loader from "react-loader-spinner";
-
-import {FirestoreCollection} from "react-firestore";
 import HomeCarousel from "../ui/homeCarousel";
 
 
