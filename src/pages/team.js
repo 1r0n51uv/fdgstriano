@@ -76,44 +76,54 @@ class Team extends Component {
                                     <div className="card-body">
 
                                         <div id="images">
+
                                             <div className="row">
+
+
 
 
                                                 <SingleTeamElement
                                                     roles="Coordinatore"
-                                                    name="Danilo Castaldo"
-                                                    image="https://graph.facebook.com/1629404770/picture?type=large&width=720&height=720"
-                                                />
-
-                                                <SingleTeamElement
-                                                    roles="Vice Coordinatore"
                                                     name="Antonia Falco"
                                                     image="https://graph.facebook.com/1454602797/picture?type=large&width=720&height=720"
                                                 />
 
                                                 <SingleTeamElement
+                                                    roles="Vice Coordinatore"
+                                                    name="Danilo Castaldo"
+                                                    image="https://graph.facebook.com/1629404770/picture?type=large&width=720&height=720"
+                                                />
+
+                                                <SingleTeamElement
                                                     roles="Segretario"
-                                                    name="Mariagrazia Lia Lubrano"
-                                                    image="https://graph.facebook.com/100000122793009/picture?type=large&width=720&height=720"
+                                                    name="Giovanna Minichini"
+                                                    image="https://graph.facebook.com/1608948625/picture?type=large&width=720&height=720"
                                                 />
 
 
                                                 <SingleTeamElement
                                                     roles="Consigliere"
-                                                    name="Severino Ammirati"
-                                                    image="https://graph.facebook.com/1095226252/picture?type=large&width=720&height=720"
+                                                    name="Silvia Gragnanelli"
+                                                    image="https://graph.facebook.com/1087668299/picture?type=large&width=720&height=720"
+                                                />
+
+
+                                                <SingleTeamElement
+                                                    roles="Consigliere"
+                                                    name="Valentina Nunziata"
+                                                    image="https://graph.facebook.com/1579548844/picture?type=large&width=720&height=720"
                                                 />
 
                                                 <SingleTeamElement
                                                     roles="Consigliere"
-                                                    name="Lidia Pagliarulo"
-                                                    image="https://graph.facebook.com/100000219198136/picture?type=large&width=720&height=720"
+                                                    name="Pasqualina Carbone"
+                                                    image="https://graph.facebook.com/100002127101074/picture?type=large&width=720&height=720"
                                                 />
 
                                                 <SingleTeamElement
                                                     roles="Consigliere"
-                                                    name="Massimo Gigi"
-                                                    image="https://graph.facebook.com/100002094705982/picture?type=large&width=720&height=720"
+                                                    name="Gianmarco Del Giudice"
+                                                    image="https://graph.facebook.com/100000025966068/picture?type=large&width=720&height=720"
                                                 />
 
                                                 <SingleTeamElement
@@ -125,8 +135,8 @@ class Team extends Component {
 
                                                 <SingleTeamElement
                                                     roles="Consigliere"
-                                                    name="Giovanni Boccia"
-                                                    image="https://graph.facebook.com/100001619094561/picture?type=large&width=720&height=720"
+                                                    name="Lorenzo Casillo"
+                                                    image="https://graph.facebook.com/1082629606/picture?type=large&width=720&height=720"
                                                 />
 
                                                 <SingleTeamElement
@@ -137,9 +147,10 @@ class Team extends Component {
 
                                                 <SingleTeamElement
                                                     roles="Consigliere"
-                                                    name="Salvatore Marone"
-                                                    image="https://ae01.alicdn.com/kf/HTB1J0IINVXXXXazaFXXq6xXFXXX9/Big-mouth-sorriso-wc-adesivi-decorazioni-murali-diy-vinile-adesivos-de-paredes-home-decalcomania-mual-arte.jpg_640x640.jpg"
+                                                    name="Severino Ammirati"
+                                                    image="https://graph.facebook.com/1095226252/picture?type=large&width=720&height=720"
                                                 />
+
 
 
                                             </div>
