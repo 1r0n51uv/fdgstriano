@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 class Navbar extends Component {
     render() {
         return (
-            <nav className="navbar navbar-expand-lg fixed-top navbar-transparent " colorOnScroll="100">
+            <nav className="navbar navbar-expand-lg bg-info fixed-top">
                 <div className="container">
                     <div className="navbar-translate">
                         <a className="navbar-brand" href="/home">
@@ -23,7 +23,7 @@ class Navbar extends Component {
                         <div className="navbar-collapse-header">
                             <div className="row">
                                 <div className="col-6 collapse-brand">
-                                    <a href="/home">
+                                    <a style={{color: '#0073e2'}} href="/home">
                                         FDGS
                                     </a>
                                 </div>
@@ -41,32 +41,32 @@ class Navbar extends Component {
 
                             <li className="nav-item p-0">
                                 <Link to={'/home'}>
-                                    <a href="#" className="nav-link"><i className="fas fa-home"></i>Home</a>
+                                    <span className="nav-link"><i className="fas fa-home"></i>Home</span>
                                 </Link>
 
                             </li>
 
                             <li className="nav-item p-0">
                                 <Link to={'/blog'}>
-                                    <a href="/blog" className="nav-link"><i className="far fa-newspaper"/>Blog</a>
+                                    <span className="nav-link"><i className="far fa-newspaper"/>Blog</span>
                                 </Link>
                             </li>
 
                             <li className="nav-item p-0">
                                 <Link to={'/team'}>
-                                    <a href="/team" className="nav-link"><i className="fas fa-users"/>Team</a>
+                                    <span className="nav-link"><i className="fas fa-users"/>Team</span>
                                 </Link>
                             </li>
 
                             <li className="nav-item p-0">
                                 <Link to={'/ppr'}>
-                                    <a href="ppr" className="nav-link"><i className="far fa-lightbulb"/>PPR</a>
+                                    <span  className="nav-link"><i className="far fa-lightbulb"/>PPR</span>
                                 </Link>
                             </li>
 
                             <li className="nav-item p-0">
                                 <Link to={'/library'}>
-                                    <a href="/library" className="nav-link"><i className="fas fa-book-open"/>Biblioteca</a>
+                                    <span className="nav-link"><i className="fas fa-book-open"/>Biblioteca</span>
                                 </Link>
                             </li>
 
