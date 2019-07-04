@@ -46,12 +46,12 @@ class HomeCarousel extends Component {
 
 
                 <a className="carousel-control-prev" href="#carouselExampleControls"
-                   role="button" data-slide="prev">
+                   role="button" data-slide="prev" onClick={this.props.backward}>
                     <i className="tim-icons icon-minimal-left"/>
                     <span className="sr-only">Previous</span>
                 </a>
                 <a className="carousel-control-next" href="#carouselExampleControls"
-                   role="button" data-slide="next" onClick={this.props.triggerParentUpdate}>
+                   role="button" data-slide="next" onClick={this.props.forward}>
                     <i className="tim-icons icon-minimal-right" />
                     <span className="sr-only">Next</span>
                 </a>

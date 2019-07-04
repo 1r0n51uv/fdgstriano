@@ -28,9 +28,15 @@ class Home extends React.PureComponent {
     }
 
     backwardSlide() {
-        this.setState({
-            sliderIndex: this.state.sliderIndex - 1
-        });
+        if (this.state.sliderIndex === 0) {
+            this.setState({
+                sliderIndex: 2
+            });
+        } else {
+            this.setState({
+                sliderIndex: this.state.sliderIndex - 1
+            });
+        }
     }
 
     render() {
@@ -71,7 +77,8 @@ class Home extends React.PureComponent {
                                     <div className="col-lg-7">
 
                                         <HomeCarousel
-                                            triggerParentUpdate={this.forwardSlide}
+                                            forward={this.forwardSlide}
+                                            backward={this.backwardSlide}
                                         />
 
 
